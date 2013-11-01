@@ -1,7 +1,7 @@
-PyConUY contest
-===============
-This is a PyConUy contest about developing a library to interface with Expand 
-Speaker API.
+PyConUY 2013 contest
+====================
+This is a PyConUy 2013 contest about developing a library to interface with
+Expand Speaker API.
 
 
 Why?
