@@ -18,8 +18,8 @@ our Restful speaker voice recognition service documented in
 
 The version of this public webservice only supports male/female gender
 recognition, so the coding task should not too hard nor long. 
-To get you started, you can check out the sample -heavily incomplete- client
-code at [sample/gender.py](sample/gender.py).
+To get you started, you can check out the example -heavily incomplete- client
+code at [example/gender.py](example/gender.py).
 
 
 Rules
