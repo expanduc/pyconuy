@@ -20,8 +20,8 @@ URL = 'http://voiceapi.expand.com.uy/recognize/gender'
 frames_chunk = 10000
 
 wav = wave.open(AUDIO_FILE_PATH, "r")
-(nchannels, sampwidth, framerate, nframes, comptype, compname) = wav.\
-                                                                    getparams()
+(nchannels, sampwidth, framerate, nframes, comptype, compname) = \
+    wav.getparams()
 bitdepth = sampwidth * 8
 
 frames = wav.readframes(frames_chunk * nchannels)
