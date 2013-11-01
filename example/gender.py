@@ -3,9 +3,7 @@ import os
 import wave
 import requests
 from os.path import (abspath, dirname)
-import ipdb
 
-#ipdb.set_trace()
 path = dirname(abspath(__file__))
 
 DATA_DIR = "%s/%s" % (path, 'data')
