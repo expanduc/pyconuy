@@ -11,6 +11,7 @@ Changelog
 0.1.0
     - First public development version
 
+------
 Schema
 ------
 All API access is done over HTTP from the voiceapi.expand.com.uy,
@@ -38,7 +39,7 @@ The request has succeeded.
 	HTTP/1.1 200 OK
 
 	{
-	   "task_id": bf4f25f6682d4d2990cec25a91a15e75, 
+	   "task_id": "bf4f25f6682d4d2990cec25a91a15e75", 
 	}
 
 
@@ -119,7 +120,7 @@ invalid
    
 If resources have custom validation errors, they will be documented with the resource.
 
-
+----------
 HTTP Verbs
 ----------
 Where possible, this API strives to use appropriate HTTP verbs for each action,
