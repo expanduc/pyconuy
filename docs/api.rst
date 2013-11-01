@@ -150,6 +150,7 @@ speaker's languague agnostic.
 The response will indicate if more data is needed and when a result should
 be ready.
 
+::
 
     POST /recognition/gender
 
@@ -212,6 +213,7 @@ period of time, just remember to check for results when the api tells you if
 you don't want to lose them. Results are one-time only, if you ask for a
 result, it will be deleted inmediatly after you got it.
 
+::
 
     POST /recognition/gender/result
 
