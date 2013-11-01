@@ -13,7 +13,7 @@ attendees to know about it.
 Objective
 =========
 The objective is simple, create a Python library to ease the usage of
-our Restful speaker voice recognition service documented in
+our RESTful speaker voice recognition API documented in
 [docs/api.rst](docs/api.rst).
 
 The version of this public webservice only supports male/female gender
