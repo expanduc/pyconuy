@@ -151,7 +151,7 @@ The response will indicate if more data is needed and when a result should
 be ready.
 
 
-POST /recognition/gender
+    POST /recognition/gender
 
 
 Form Parameters
@@ -213,7 +213,7 @@ you don't want to lose them. Results are one-time only, if you ask for a
 result, it will be deleted inmediatly after you got it.
 
 
-POST /recognition/gender/result
+    POST /recognition/gender/result
 
 
 Form Parameters
