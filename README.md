@@ -14,12 +14,12 @@ Objective
 =========
 The objective is simple, create a Python library to ease the usage of
 our Restful speaker voice recognition service documented in
-[a relative link](docs/api.rst).
+[docs/api.rst](docs/api.rst).
 
 The version of this public webservice only supports male/female gender
-recognition, so the coding task should not too hard nor lon. 
-To ger you started, you can check out the sample -heavily incomplete- client
-code at [a relative link](sample/gender.py).
+recognition, so the coding task should not too hard nor long. 
+To get you started, you can check out the sample -heavily incomplete- client
+code at [sample/gender.py](sample/gender.py).
 
 
 Rules
