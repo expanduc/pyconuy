@@ -17,9 +17,9 @@ our Restful speaker voice recognition service documented in
 [docs/api.rst](docs/api.rst).
 
 The version of this public webservice only supports male/female gender
-recognition, so the coding task should not too hard nor long. 
-To get you started, you can check out the example -heavily incomplete- client
-code at [example/gender.py](example/gender.py).
+recognition, so the coding task should not be too hard nor long. 
+To get you started, you can check out the very basic client example 
+at [example/gender.py](example/gender.py).
 
 
 Rules
@@ -35,7 +35,7 @@ We watch out for, but not limited to:
 * The right degree of abstraction.
 * Documentation, usage of a framework for this end is a plus.
 * PEP8 complaint code.
-* Few dependencies
+* Few dependencies.
 * Reported API bugs thru this repository Issue system. This includes
   documentation errors.
 
