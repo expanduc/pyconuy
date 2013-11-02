@@ -15,6 +15,7 @@ AUDIO_FILE_PATH = "%s/%s" % (DATA_DIR, AUDIO_FILE)
 
 URL = 'http://voiceapi.expand.com.uy/recognize/gender'
 
+# Only submiting 10000 frames, a bit over 1 sec of audio at 8kHz
 frames_chunk = 10000
 
 wav = wave.open(AUDIO_FILE_PATH, "r")
