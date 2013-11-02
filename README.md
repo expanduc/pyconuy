@@ -1,7 +1,7 @@
 PyConUY 2013 contest
 ====================
-This is a PyConUy 2013 contest about developing a library to interface with
-[Expand](http://www.expand.com.uy/novedades/concurso-pycon-2013/) Speaker API.
+This is a PyConUy 2013 [contest](http://www.expand.com.uy/novedades/concurso-pycon-2013/) about developing a library to interface with
+[Expand](http://www.expand.com.uy/) Speaker API.
 
 
 Why?
