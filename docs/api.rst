@@ -152,7 +152,7 @@ be ready.
 
 ::
 
-    POST /recognition/gender
+    POST /recognize/gender
 
 
 Form Parameters
@@ -215,7 +215,7 @@ result, it will be deleted inmediatly after you got it.
 
 ::
 
-    POST /recognition/gender/result
+    POST /recognize/gender/result
 
 
 Form Parameters
