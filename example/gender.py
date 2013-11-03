@@ -38,13 +38,13 @@ data = {'audio_sequence': 1,
 
 files_audiodata = {'file': ('audiodata', frames)}
 
-print("Feeding audio to WS")
+print("Feeding %s audio frames to WS" % (frames_chunk))
 audio_req = requests.post(RECOGNITION_URL, data=data, files=files_audiodata)
 print("Service replied with status code [%s]" % (audio_req.status_code))
 response = audio_req.json()
 result_in = response['new_result_in']
 task_id = response['task_id']
-print("Waiting %s secs for response" % (result_in))
+print("Waiting %s secs to ask for response" % (result_in))
 time.sleep(result_in)
 result = requests.post(RESULT_URL, data={'task_id': task_id})
 print("Service replied with status code [%s]" % (result.status_code))
