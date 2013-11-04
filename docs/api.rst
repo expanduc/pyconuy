@@ -1,9 +1,9 @@
 ------------
 expandvr API
 ------------
-Last update: 31 Oct, 2013
+Last update: Nov 03, 2013
 
-Version: 0.1.0 (http://semver.org/ - Semantic Versioning 2.0.0)
+Version: 0.2.0 (http://semver.org/ - Semantic Versioning 2.0.0)
 
 
 Changelog
@@ -14,7 +14,7 @@ Changelog
 ------
 Schema
 ------
-All API access is done over HTTP from the voiceapi.expand.com.uy,
+All API access is done over HTTP from the voiceapi.expand.com.uy domain,
 authentication is disabled for this version.
 Data is received using multipart-form encoded requests, all data sent by this
 API is JSON encoded.
@@ -116,18 +116,20 @@ missing
 missing_field
     This means a required field on a resource has not been set.
 invalid
-    This means the formatting of a field is invalid. The documentation for that resource should be able to give you more specific information.
+    This means the formatting of a field is invalid. The documentation for that
+    resource should be able to give you more specific information.
    
-If resources have custom validation errors, they will be documented with the resource.
+If resources have custom validation errors, they will be documented with the
+resource.
 
 ----------
 HTTP Verbs
 ----------
-Where possible, this API strives to use appropriate HTTP verbs for each action,
-however in the current version only the POST verb will be accepted.
+Where possible, this API strives to use appropriate HTTP verbs for each action.
 
 POST
-    Used for creating resources, or performing custom actions (such as speaker or gender recognition). 
+    Used for creating resources (none in this version), or performing custom
+    actions (such as speaker or gender recognition). 
 
 
 ----------------
@@ -164,11 +166,13 @@ audio_samplerate
 audio_bitdepth
    Bitdepth of the provided raw audio data. Only '16'.
 audio_channels
-   How much audio channels do this raw audio data have. Only '1' channel is supported.
+   How much audio channels do this raw audio data have. Only '1' channel is
+   supported in this version.
 audio_sent_frames
    How many frames are you sending in this chunk.
 task_id
-   Optional task id, used to reference different requests with different sequences.
+   Optional task id, used to reference different requests with different
+   sequences.
 
 Appended files
    Binary audio data must be issued with a filename 'file'. 
@@ -193,9 +197,13 @@ Status: 200 OK
 received_sequences
     All received audio sequences.
 new_result_in
-    Estimated time of arrival for new result given the provided data.
+    Estimated time of arrival in seconds of a new result given the provided
+    data. Defaults to 'n/a' if no task is scheduled or running. 
+    This is only an estimated time, and will change in the future to better
+    reflect the overhead impact of the service load.
 need_more
-    Boolean indicating if more audio data is needed to issue a gender recognition task.
+    Boolean indicating if more audio data is needed to issue a gender
+    recognition task.
 task_id
     Task id of the current recognition request. 
     The consumer must use this value to issue new requests with new sequences.
@@ -208,14 +216,15 @@ Retrieve gender result
 Retrieves the gender recognition task result.
 
 Fetching the results in a timely manner is the consumer's responsability. 
-In this API development stage results will be stored for a relatively short
-period of time, just remember to check for results when the api tells you if
-you don't want to lose them. Results are one-time only, if you ask for a
-result, it will be deleted inmediatly after you got it.
+In this API's development stage results will be stored for only 5 minutes,
+just remember to check for results when the API tells you if you don't want to
+lose them. Results can be read one time only, if you ask for a result, it will
+be deleted inmediatly after you got it.
 
 ::
 
     POST /recognize/gender/result
+    
 
 
 Form Parameters
@@ -240,6 +249,32 @@ Status: 200 OK
 gender
     Recognized gender, defaults to 'n/a' if result is not ready 
 score
-    Score of recognition, the bigger values the better. Beware, score is still a work in progress, you can get the correct gender and some pretty crazy scores. Defaults to 'n/a' if result is not ready.
+    Score of recognition, the bigger values the better. Beware, score is still
+    a work in progress, you can get the correct gender and some pretty crazy
+    scores. Defaults to 'n/a' if result is not ready.
 new_result_in
-    Estimated time of arrival for a new result given the last provided audio data.
+    Estimated time of arrival for a new result in seconds from the last issued
+    audio sequence. Defaults to 'n/a' if there are no scheduled or running
+    tasks.
+
+
+--------------------------
+Frequently Asked Questions
+--------------------------
+
+* Why tasks aren't represented as resources?
+  REST resources should not expire and dissappear without an explicit DELETE
+  request. Tasks must and they will, that beeing said, we may add that in the
+  near future as this is a alpha REST-ish API.
+
+* Why do tasks and results expire?
+  Mainly because if not it will consume a large ammount of resources on non
+  important and potentionally intermediate responses. Also results can't sit
+  around forever in a public demo service.
+  For the same reason, when not enough data is provided to launch a task, 
+  the service can't let the already accumulated data to live for a long period
+  of time.
+
+* Why are results obtained with a POST?
+  In REST, when RPC-like actions are issued POST should be used. We'll stick
+  with that for now. 

@@ -1,7 +1,9 @@
 PyConUY 2013 contest
 ====================
-This is a PyConUy 2013 [contest](http://www.expand.com.uy/novedades/concurso-pycon-2013/) about developing a library to interface with
-[Expand](http://www.expand.com.uy/) Speaker API.
+This is a PyConUy 2013
+[contest](http://www.expand.com.uy/novedades/concurso-pycon-2013/) about
+developing a library to interface with [Expand](http://www.expand.com.uy/)
+Speaker API.
 
 
 Why?
@@ -12,9 +14,11 @@ attendees to know about it.
 
 Objective
 =========
-The objective is simple, create a Python library to ease the usage of
-our RESTful speaker voice recognition API documented in
-[docs/api.rst](docs/api.rst). There is also a live demo using this very same API accesible by telephone at +598 27123142 (instructions are in Spanish).
+The objective is simple, create a Python library to ease the usage of our
+REST-ish speaker voice recognition API documented in
+[docs/api.rst](docs/api.rst).
+There is also a live demo using this very same API accesible by telephone at
++598 27123142 (instructions are in Spanish).
 
 The version of this public webservice only supports male/female gender
 recognition, so the coding task should not be too hard nor long. 
@@ -24,7 +28,9 @@ at [example/gender.py](example/gender.py).
 
 Rules
 =====
-The rules are simple, you spend a bit of time coding, we got to choose the one we like the most. Only open licensed software is allowed to be used and you can team up with as many developers as you like.
+The rules are simple, you spend a bit of time coding, we got to choose the one
+we like the most. Only open licensed software is allowed to be used and you can
+team up with as many developers as you like.
 
 We watch out for, but not limited to:
 
@@ -38,9 +44,11 @@ We watch out for, but not limited to:
   documentation errors.
 
 
+
 How to participate
 ==================
-Clone this repo and issue a "pull request" before November 10th.
+Clone this repo and issue a "pull request" before November 10th. Keep an
+eye for updates to this README and API documentation.
 
 
 Prize
