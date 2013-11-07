@@ -161,6 +161,7 @@ Form Parameters
 ---------------
 audio_sequence
    What sequence this audio chunk corresponds to. Valid range '1'-'100'.
+   Using the same sequence in a request will overwrite the previous value.
 audio_samplerate
    Samplerate of the provided raw audio data. Only '8000'.
 audio_bitdepth
