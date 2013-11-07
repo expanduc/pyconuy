@@ -47,7 +47,7 @@ We watch out for, but not limited to:
 
 How to participate
 ==================
-Clone this repo and issue a "pull request" before November 10th. Keep an
+Fork this repo and issue a "pull request" before November 10th. Keep an
 eye for updates to this README and API documentation.
 
 
