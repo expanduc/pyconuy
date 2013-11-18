@@ -65,14 +65,14 @@ Winner
 ======
 There were two PRs.
 
-[marcelord](https://github.com/marcelor/pyconuy) reported several issues, and
+[marcelor](https://github.com/marcelor/pyconuy) reported several issues, and
 the library was documented using Sphinx, which we love.
 The code was functional and quite easy to follow, yet it introduced some
 concepts as endpoints which weren't that much natural for us. Also, no audio
 file handling was included, which we would like to be included as this is a big
 part of the API usage.
 
-Let's talk about [tooxies's](https://github.com/tooxie/pyconuy) work now.
+Let's talk about [tooxie](https://github.com/tooxie/pyconuy)'s work now.
 We loved the level of abstraction of his library, it was well balanced, and
 included test suites. The code was extremely well documented, but lacked
 auto-generated documentation, that we would have appreciated. However, good
