@@ -9,7 +9,7 @@ Speaker API.
 Why?
 ===
 We use Python in a large portion of our projets and we wanted the PyConUY
-attendees to know about it. 
+attendees to know about it.
 
 
 Objective
@@ -21,8 +21,8 @@ There is also a live demo using this very same API accesible by telephone at
 +598 27123142 (instructions are in Spanish).
 
 The version of this public webservice only supports male/female gender
-recognition, so the coding task should not be too hard nor long. 
-To get you started, you can check out the very basic client example 
+recognition, so the coding task should not be too hard nor long.
+To get you started, you can check out the very basic client example
 at [example/gender.py](example/gender.py).
 
 
@@ -54,16 +54,16 @@ eye for updates to this README and API documentation.
 Prize
 =====
 The prize -besides the glory- is a Lenovo IdeaTab A2107 tablet.
- 
-We'll make a decision on November 18th and announce the happy winner
-right here in this file. 
 
-Just git pull the results. 
+We'll make a decision on November 18th and announce the happy winner
+right here in this file.
+
+Just git pull the results.
 
 
 Winner
 ======
-There were two PRs. 
+There were two PRs.
 
 [marcelord](https://github.com/marcelor/pyconuy) reported several issues, and
 the library was documented using Sphinx, which we love.
