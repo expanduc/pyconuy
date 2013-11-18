@@ -7,15 +7,18 @@ from os.path import (abspath, dirname, join)
 
 path = dirname(abspath(__file__))
 
-DATA_DIR = "%s/%s" % (path, 'data')
+DATA_DIR = join(path, 'data')
 
 # Relative audio path to data dir
 AUDIO_FILE = 'F-audio-sample.wav'
 
 AUDIO_FILE_PATH = join(DATA_DIR, AUDIO_FILE)
 
-RECOGNITION_URL = 'http://voiceapi.expand.com.uy/recognize/gender'
-RESULT_URL = 'http://voiceapi.expand.com.uy/recognize/gender/result'
+#RECOGNITION_URL = 'http://voiceapi.expand.com.uy/recognize/gender'
+#RESULT_URL = 'http://voiceapi.expand.com.uy/recognize/gender/result'
+RECOGNITION_URL = 'http://192.168.0.56:18000/recognize/gender'
+RESULT_URL = 'http://192.168.0.56:18000/recognize/gender/result'
+
 
 frames_chunk = 80000
 

@@ -63,4 +63,29 @@ Just git pull the results.
 
 Winner
 ======
-Not yet.
+There were two PRs. 
+
+[marcelord](https://github.com/marcelor/pyconuy) reported several issues, and
+the library was documented using Sphinx, which we love.
+The code was functional and quite easy to follow, yet it introduced some
+concepts as endpoints which weren't that much natural for us. Also, no audio
+file handling was included, which we would like to be included as this is a big
+part of the API usage.
+
+Let's talk about [tooxies's](https://github.com/tooxie/pyconuy) work now.
+We loved the level of abstraction of his library, it was well balanced, and
+included test suites. The code was extremely well documented, but lacked
+auto-generated documentation, that we would have appreciated. However, good
+documentation and usage examples where supplied, so it was easy to follow the
+code and understand how the library worked.
+
+No submission was 100% PEP8 compliant but tooxie's was by far the most rigorous
+in that matter. This submission also had automatic audio file handling,
+including automatic conversion, which is fantastic feature to have.
+tooxie also reported a couple of issues via github.
+
+We found tooxie's version the most pythonic and functionally complete, and
+that's why we choose it as the winner.
+
+Congratulations to both and thank you very much for your submissions.
+
